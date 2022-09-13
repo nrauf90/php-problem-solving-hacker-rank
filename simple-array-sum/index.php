@@ -22,16 +22,8 @@ function simpleArraySum($array) {
     return array_sum($array);
 }
 
-$fptr = fopen(getenv("OUTPUT_PATH"), "w");
+$array = [3, 4, 6, 8];
 
-$ar_count = intval(trim(fgets(STDIN)));
+$result = simpleArraySum($array);
 
-$ar_temp = rtrim(fgets(STDIN));
-
-$ar = array_map('intval', preg_split('/ /', $ar_temp, -1, PREG_SPLIT_NO_EMPTY));
-
-$result = simpleArraySum($ar);
-
-fwrite($fptr, $result . "\n");
-
-fclose($fptr);
+echo $result;
