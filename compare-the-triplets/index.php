@@ -8,6 +8,11 @@
  *  2. INTEGER_ARRAY b
  */
 
+/**
+ * @param $a
+ * @param $b
+ * @return int[]
+ */
 function compareTriplets($a, $b) {
     $alice = 0;
     $bob = 0;
